@@ -1,0 +1,151 @@
+/* Reset + Layout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  background-color: #fafafa;
+  color: #333;
+}
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #222;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links li a:hover {
+  color: #00bcd4;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #00bcd4, #3f51b5);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+}
+
+.hero-content span {
+  color: yellow;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.btn {
+  background: #fff;
+  color: #3f51b5;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ddd;
+}
+
+/* About Section */
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Projects Section */
+.projects {
+  background: #f4f4f4;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Contact Section */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+.contact button {
+  align-self: center;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
